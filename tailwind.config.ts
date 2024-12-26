@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'image-banner': "url('/img-1.webp')",
+      },
     },
   },
   plugins: [],

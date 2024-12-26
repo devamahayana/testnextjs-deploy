@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    overflow: hidden;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.hero{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: url("../../../../img-1.webp") no-repeat 50% 50%; */
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero .header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 0.5em;
+}
+
+sup{
+    position: relative;
+    top: 0.25em;
+    color: #FFF;
+    font-size: 3vw;
+}
+
+.hero h1{
+    color: #FFF;
+    font-size: 12vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.024em;
+    line-height: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    padding: 1.5em 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    height: 76px;
+}
+
+.logo{
+    width: 50px;
+}
+
+.menu-open, .menu-close{
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    padding: 1.5em;
+    width: 100vw;
+    height: 100vh;
+    background-color: #101010;
+    color: #fff;
+    display: flex;
+    gap: 1.5em;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.menu-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-img{
+    position: relative;
+    flex: 3;
+    overflow: hidden;
+}
+
+.menu-items{
+    position: relative;
+    top: 0px;
+    flex: 1; 
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.menu-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img-1{
+    opacity: 0.9;
+}
+#img-2{
+    opacity: 0.7;
+}
+#img-3{
+    opacity: 0.5;
+}
+#img-4{
+    opacity: 0.3;
+}
+
+.menu-logo{
+    width: 48px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-logo img{
+    position: relative;
+}
+
+.menu-link p{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.menu-link a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-footer{
+    width: 100%;
+    display: flex;
+}
+
+.menu-sub-col{
+    flex: 1;
+}
+
+.menu-sub-item p{
+    position: relative;
+}
+
+.menu-link,
+.menu-sub-item{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+}
+
+@media (max-width: 900px){
+    .menu-img{
+        display: none;
+    }
+}
