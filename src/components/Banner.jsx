@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { CustomEase } from 'gsap/all';
+import "../app/banner.css"
 
 const Banner = () => {
     useEffect(() => {
