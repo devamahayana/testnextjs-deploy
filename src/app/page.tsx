@@ -1,9 +1,12 @@
+import HeroSection from "@/components/HeroSection";
+import Banner from "@/components/Banner";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <h1>Testing webs</h1>
+      <Banner />
+      {/* <HeroSection /> */}
     </>
   );
 }
