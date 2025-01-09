@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Image from "next/image";
 import Magnetic from "@/components/Magnetic";
 import HomeBanner from "@/components/HomeBanner";
+import Product from "@/components/Product";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       {/* <Menu /> */}
       {/* <Contact /> */}
       {/* <HeroSection /> */}
-      {/* <Magnetic /> */}      
+      {/* <Magnetic /> */}
+      <Product />      
     </>
   );
 }
