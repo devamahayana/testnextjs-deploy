@@ -11,14 +11,14 @@ import HomeBanner from "@/components/HomeBanner";
 export default function Home() {
   return (
     <>
+      <HomeBanner />
       {/* <Banners /> */}
       {/* <Banner /> */}
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <Menu /> */}
       {/* <Contact /> */}
       {/* <HeroSection /> */}
-      {/* <Magnetic /> */}
-      <HomeBanner />
+      {/* <Magnetic /> */}      
     </>
   );
 }
