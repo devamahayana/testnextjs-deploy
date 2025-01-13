@@ -153,17 +153,17 @@ const HomeBanner = () => {
 
         {/* Hero Content */}
         <div className="relative w-full h-full">
-            <div className="site-logo">
+            {/* <div className="site-logo">
                 <div className="word"><h1>Balimmo</h1></div>
                 <div className="word"><h1>Development<sup>&copy;</sup></h1></div>
-            </div>
+            </div> */}
 
-            <div className="nav">
+            {/* <div className="nav">
                 <div className="nav-item"><p>About</p></div>
                 <div className="nav-item"><p>Work</p></div>
                 <div className="nav-item"><p>Journal</p></div>
                 <div className="nav-item"><p>Contact</p></div>
-            </div>
+            </div> */}
 
             <div className="cover-img">
                 <img src="./assets/img3.webp" alt="" />

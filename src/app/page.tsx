@@ -13,7 +13,7 @@ import Product from "@/components/Product";
 export default function Home() {
   return (
     <>
-      {/* <HomeBanner /> */}
+      <HomeBanner />
       {/* <Banners /> */}
       {/* <Banner /> */}
       {/* <Portfolio /> */}
@@ -22,7 +22,7 @@ export default function Home() {
       {/* <Contact /> */}
       {/* <HeroSection /> */}
       {/* <Magnetic /> */}
-      <Product />      
+      {/* <Product />       */}
     </>
   );
 }

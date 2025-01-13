@@ -112,6 +112,48 @@ const Menu = () => {
                 },
             });
         };
+
+        const menuImgContainer = document.querySelector(".menu-img");
+        const images = document.querySelectorAll(".menu-img img");
+
+        let mouse = { x: 0, y: 0};
+        let cx = window.innerWidth / 2;
+        let cy = window.innerHeight / 2;
+
+        const scales = [0.81, 0.84, 0.87, 0.9];
+
+        function update() {
+            let dx = mouse.x - cx;
+            let dy = mouse.y - cy;
+
+            let tiltx = (dy / cy) * 2;
+            let tilty = (dx / cx) * 2;
+
+            gsap.to(menuImgContainer, {
+                duratin: 2,
+                transform: `rotate3d(${tiltx}, ${tilty}, 0, 15deg)`,
+                ease: "power3.out",
+            });
+
+            images.forEach((img, index) => {
+                let parallaxX = -(dx * (index + 1)) / 100;
+                let parallaxY = -(dy * (index + 1)) / 100;
+
+                let transformStyles = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px)) scale(${scales[index]})`;
+
+                gsap.to(img, {
+                    duratin: 2,
+                    transform: transformStyles,
+                    ease: "power3.out",
+                });
+            });
+        }
+
+        document.body.addEventListener('mousemove', function (event) {
+            mouse.x = event.clientX;
+            mouse.y = event.clientY;
+            update();
+        });
     }, []);
 
   return (
@@ -121,12 +163,12 @@ const Menu = () => {
             <p className="menu-open">Menu</p>
         </nav>
         
-        <section className="hero bg-image-banner">
+        {/* <section className="hero bg-image-banner">
             <div className="header">
                  <h1>Break</h1>
                  <sup>&copy;</sup>
             </div>
-        </section>
+        </section> */}
 
         <div className="menu">
             <div className="menu-nav"><p className="menu-close">Close</p></div>
