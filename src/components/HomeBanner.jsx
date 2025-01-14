@@ -140,47 +140,33 @@ const HomeBanner = () => {
             <div className="revealer r-2"></div>
         </div>
 
-        <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
-            <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
-            <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div>
-            <div className="imgBanner"><img src="./assets/img3.webp" alt="" /></div>
+        {/* <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
             <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img3.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img2.webp" alt="" /></div>
-        </div>
+        </div> */}
 
         {/* Hero Content */}
-        <div className="relative w-full h-full">
-            {/* <div className="site-logo">
-                <div className="word"><h1>Balimmo</h1></div>
-                <div className="word"><h1>Development<sup>&copy;</sup></h1></div>
-            </div> */}
-
-            {/* <div className="nav">
-                <div className="nav-item"><p>About</p></div>
-                <div className="nav-item"><p>Work</p></div>
-                <div className="nav-item"><p>Journal</p></div>
-                <div className="nav-item"><p>Contact</p></div>
-            </div> */}
+        <div className="relative w-full h-full">        
 
             <div className="cover-img">
                 <img src="./assets/img3.webp" alt="" />
             </div>
 
-            <div className="site-info">
-                <div className="row">
-                    <div className="col">
+            <div className="site-info absolute bottom-8 left-8 w-1/2 h-1/2 flex flex-col justify-between">
+                <div className="row flex gap-8">
+                    <div className="col flex-1">
                         <div className="line"><p>Featured Works</p></div>
                     </div>
-                    <div className="col">
+                    <div className="col flex-1">
                         <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic omnis corrupti officia saepe sunt.</h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col"></div>
-                    <div className="col">
+                <div className="row flex gap-8">
+                    <div className="col flex-1"></div>
+                    <div className="col flex-1">
                         <div className="address">
                             <div className="line"><p>Arc Studio</p></div>
                             <div className="line"><p>Riverstone Building</p></div>

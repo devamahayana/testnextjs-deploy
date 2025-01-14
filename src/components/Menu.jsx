@@ -14,7 +14,7 @@ const Menu = () => {
     
         gsap.set(".menu-logo img", { y: 50 });
         gsap.set(".menu-link p", { y: 40 });
-        gsap.set(".menu-sub-item p", { y: 12 });
+        gsap.set(".menu-sub-item p", { y: 24 });
         gsap.set(["#img-2, #img-3, #img-4"], { top: "150%" });
     
         menuOpen.addEventListener("click", function () {
@@ -104,7 +104,7 @@ const Menu = () => {
                     });
                     gsap.set(".menu-logo img", { y: 50 });
                     gsap.set(".menu-link p", { y: 40 });
-                    gsap.set(".menu-sub-item p", { y: 12 });
+                    gsap.set(".menu-sub-item p", { y: 24 });
                     gsap.set(".menu-items", { opacity: 1, top: "0px" });
                     gsap.set(["#img-2, #img-3, #img-4"], { top: "150%" });
     
@@ -135,6 +135,15 @@ const Menu = () => {
                 ease: "power3.out",
             });
 
+            gsap.to(".nav-menu",
+                {
+                    y: 0,
+                    duration: 3,
+                    ease: "hop2",
+                    stagger: 0.1,
+                    delay: 4.25,
+                });
+
             images.forEach((img, index) => {
                 let parallaxX = -(dx * (index + 1)) / 100;
                 let parallaxY = -(dy * (index + 1)) / 100;
@@ -142,10 +151,10 @@ const Menu = () => {
                 let transformStyles = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px)) scale(${scales[index]})`;
 
                 gsap.to(img, {
-                    duratin: 2,
+                    duration: 2,
                     transform: transformStyles,
                     ease: "power3.out",
-                });
+                });                
             });
         }
 
@@ -157,18 +166,11 @@ const Menu = () => {
     }, []);
 
   return (
-    <div className="container">
-        <nav>
+    <div className="">
+        <nav className='nav-menu'>
             <div className="logo"><img src="./assets/logo.png" width="50px" alt="" /></div>
             <p className="menu-open">Menu</p>
         </nav>
-        
-        {/* <section className="hero bg-image-banner">
-            <div className="header">
-                 <h1>Break</h1>
-                 <sup>&copy;</sup>
-            </div>
-        </section> */}
 
         <div className="menu">
             <div className="menu-nav"><p className="menu-close">Close</p></div>
@@ -182,7 +184,7 @@ const Menu = () => {
 
             <div className="menu-col menu-items">
                 <div className="menu-logo">
-                    <img src="./assets/logo.png" width="50px" alt="" />
+                    <img src="./logo.png" width="50px" alt="" />
                 </div>
 
                 <div className="menu-links">
