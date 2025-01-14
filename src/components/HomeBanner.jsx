@@ -140,13 +140,13 @@ const HomeBanner = () => {
             <div className="revealer r-2"></div>
         </div>
 
-        {/* <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
+        <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
             <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img3.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img2.webp" alt="" /></div>
-        </div> */}
+        </div>
 
         {/* Hero Content */}
         <div className="relative w-full h-full">        
