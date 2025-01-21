@@ -10,7 +10,6 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
     background: #000;
     overflow: hidden;
-
 }
 
 img{
@@ -48,7 +47,9 @@ nav{
     cursor: pointer;
 }
 
-
+.nav-menu{
+    transform: translateY(-100%);
+}
 .menu{
     position: fixed;
     top: 0;

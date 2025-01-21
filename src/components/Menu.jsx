@@ -138,10 +138,10 @@ const Menu = () => {
             gsap.to(".nav-menu",
                 {
                     y: 0,
-                    duration: 3,
+                    duration: 1.25,
                     ease: "hop2",
                     stagger: 0.1,
-                    delay: 4.25,
+                    delay: 6,
                 });
 
             images.forEach((img, index) => {

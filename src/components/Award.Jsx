@@ -116,7 +116,7 @@ const Award = () => {
 
 
   return (
-    <div className="container">
+    <div className="">
         <div className="preview">
             <div className="preview-img preview-img-1"></div>
             <div className="preview-img preview-img-2"></div>
