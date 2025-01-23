@@ -5,7 +5,7 @@ import { data } from '../app/data.js'; // Pastikan data.js ada dalam struktur fo
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
-import "../app/portfolio.css";
+// import "../app/portfolio.css";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -20,10 +20,10 @@ const Portfolio = () => {
     });
     gsap.ticker.lagSmoothing(0);
 
-    const pinnedSection = document.querySelector(".pinned");
-    const progressBar = document.querySelector(".progress");
+    const pinnedSection = document.querySelector(".portfolio-pinned");
+    const progressBar = document.querySelector(".portfolio-progress");
     const pinnedHeight = window.innerHeight * 10;
-    const images = gsap.utils.toArray(".img");
+    const images = gsap.utils.toArray(".portfolio-img");
 
     // Functions for animating image entry and exit
     function animateImageEntry(img) {
@@ -79,8 +79,8 @@ const Portfolio = () => {
     }
 
     function updateInfoContent(index) {
-      const infoItems = document.querySelectorAll(".info > div p");
-      const link = document.querySelector(".info .link a");
+      const infoItems = document.querySelectorAll(".portfolio-info > div p");
+      const link = document.querySelector(".portfolio-info .portfolio-link a");
 
       infoItems.forEach((item) => (item.innerHTML = ""));
       link.setAttribute("href", "#");
@@ -195,25 +195,25 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="container">
-        <section className="pinned">
-            <div className="info">
-                <div className="title"><p>Title</p></div>
-                <div className="tagline"><p>Tagline</p></div>
-                <div className="year"><p>Year</p></div>
-                <div className="tag"><p>Tag</p></div>
-                <div className="link"><a href="#">Explore</a></div>
+    <div className="container portfolio">
+        <section className="portfolio-pinned">
+            <div className="portfolio-info">
+                <div className="portfolio-title"><p>Title</p></div>
+                <div className="portfolio-tagline"><p>Tagline</p></div>
+                <div className="portfolio-year"><p>Year</p></div>
+                <div className="portfolio-tag"><p>Tag</p></div>
+                <div className="portfolio-link"><a href="">Explore</a></div>
             </div>
 
-            <div className="progress-bar">
-                <div className="progress"></div>
+            <div className="portfolio-progress-bar">
+                <div className="portfolio-progress"></div>
             </div>
 
-            <div className="img" id="img-1"><img src="./assets/img1.webp" alt="" /></div>
-            <div className="img" id="img-2"><img src="./assets/img2.webp" alt="" /></div>
-            <div className="img" id="img-3"><img src="./assets/img3.webp" alt="" /></div>
-            <div className="img" id="img-4"><img src="./assets/img4.webp" alt="" /></div>
-            <div className="img" id="img-5"><img src="./assets/img5.webp" alt="" /></div>
+            <div className="portfolio-img" id="portfolio-img-1"><img src="./assets/img1.webp" alt="" /></div>
+            <div className="portfolio-img" id="portfolio-img-2"><img src="./assets/img2.webp" alt="" /></div>
+            <div className="portfolio-img" id="portfolio-img-3"><img src="./assets/img3.webp" alt="" /></div>
+            <div className="portfolio-img" id="portfolio-img-4"><img src="./assets/img4.webp" alt="" /></div>
+            <div className="portfolio-img" id="portfolio-img-5"><img src="./assets/img5.webp" alt="" /></div>
         </section>
 
         <section className="about">

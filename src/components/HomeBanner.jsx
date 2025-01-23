@@ -1,5 +1,5 @@
 'use client';
-import "../app/homebanner.css";
+// import "../app/homebanner.css";
 import { useEffect } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
@@ -135,14 +135,14 @@ const HomeBanner = () => {
       
   return (
     <div className="relative w-screen h-screen overflow-hidden">
-        <div className="revealers fixed top-0 left-0 w-screen h-screen flex flex-col z-[2]">
+        <div className="revealers absolute top-0 left-0 w-screen h-screen flex flex-col z-[2]">
             <div className="revealer r-1"></div>
             <div className="revealer r-2"></div>
         </div>
 
         <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
-            <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
-            <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div>
+            {/* <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
+            <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div> */}
             <div className="imgBanner main"><img src="./assets/img3.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img2.webp" alt="" /></div>

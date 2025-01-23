@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from "react";
 import gsap from "gsap";
-import "../app/award.css";
+// import "../app/award.css";
 
 const Award = () => {
     useEffect(() => {
@@ -13,10 +13,10 @@ const Award = () => {
             "./assets/img5.webp",
         ];
     
-        const menuItems = document.querySelectorAll(".menu-item");
+        const awardsItems = document.querySelectorAll(".awards-item");
     
-        menuItems.forEach((item) => {
-            const copyElements = item.querySelectorAll(".info, .name, .tag");
+        awardsItems.forEach((item) => {
+            const copyElements = item.querySelectorAll(".awards-info, .awards-name, .awards-tag");
     
             copyElements.forEach((div) => {
                 const copy = div.querySelector("p");
@@ -30,8 +30,8 @@ const Award = () => {
         });
     
         const appendImages = (src) => {
-            const preview1 = document.querySelector(".preview-img-1");
-            const preview2 = document.querySelector(".preview-img-2");
+            const preview1 = document.querySelector(".awards-preview-img-1");
+            const preview2 = document.querySelector(".awards-preview-img-2");
     
             const img1 = document.createElement("img");
             const img2 = document.createElement("img");
@@ -61,7 +61,7 @@ const Award = () => {
             }
         }
     
-        document.querySelectorAll(".menu-item").forEach((item, index) => {
+        document.querySelectorAll(".awards-item").forEach((item, index) => {
             item.addEventListener("mouseover", () => {
                 mouseOverAnimation(item);
                 appendImages(imageSources[index]);
@@ -94,8 +94,8 @@ const Award = () => {
             });
         };
     
-        document.querySelector(".menu").addEventListener("mouseout", function (){
-            gsap.to(".preview-img img", {
+        document.querySelector(".awards").addEventListener("mouseout", function (){
+            gsap.to(".awards-preview-img img", {
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
                 duration: 1,
                 ease: "power3.out",
@@ -103,7 +103,7 @@ const Award = () => {
         });
     
         document.addEventListener("mousemove", function(e) {
-            const preview = document.querySelector(".preview");
+            const preview = document.querySelector(".awards-preview");
     
             gsap.to(preview, {
                 x: e.clientX + 300,
@@ -116,65 +116,65 @@ const Award = () => {
 
 
   return (
-    <div className="">
-        <div className="preview">
-            <div className="preview-img preview-img-1"></div>
-            <div className="preview-img preview-img-2"></div>
+    <div className="w-screen h-screen flex items-center relative">
+        <div className="awards-preview">
+            <div className="awards-preview-img awards-preview-img-1"></div>
+            <div className="awards-preview-img awards-preview-img-2"></div>
         </div>
 
-        <div className="menu">
-            <div className="menu-item">
-                <div className="info">
+        <div className="awards">
+            <div className="awards-item">
+                <div className="awards-info">
                     <p>Puma POV</p>
                 </div>
-                <div className="name">
+                <div className="awards-name">
                     <p>Breathing Video Experience</p>
                 </div>
-                <div className="tag">
+                <div className="awards-tag">
                     <p>Creative Design</p>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="info">
+            <div className="awards-item">
+                <div className="awards-info">
                     <p>lOREM</p>
                 </div>
-                <div className="name">
+                <div className="awards-name">
                     <p>Breathing Video Experience</p>
                 </div>
-                <div className="tag">
+                <div className="awards-tag">
                     <p>Creative Design</p>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="info">
+            <div className="awards-item">
+                <div className="awards-info">
                     <p>Puma POV</p>
                 </div>
-                <div className="name">
+                <div className="awards-name">
                     <p>Breathing Video Experience</p>
                 </div>
-                <div className="tag">
+                <div className="awards-tag">
                     <p>Creative Design</p>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="info">
+            <div className="awards-item">
+                <div className="awards-info">
                     <p>Puma POV</p>
                 </div>
-                <div className="name">
+                <div className="awards-name">
                     <p>Breathing Video Experience</p>
                 </div>
-                <div className="tag">
+                <div className="awards-tag">
                     <p>Creative Design</p>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="info">
+            <div className="awards-item">
+                <div className="awards-info">
                     <p>Puma POV</p>
                 </div>
-                <div className="name">
+                <div className="awards-name">
                     <p>Breathing Video Experience</p>
                 </div>
-                <div className="tag">
+                <div className="awards-tag">
                     <p>Creative Design</p>
                 </div>
             </div>

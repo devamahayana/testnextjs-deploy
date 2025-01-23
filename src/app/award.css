@@ -6,26 +6,25 @@
 html, body{
     overflow-x: hidden;
   }
-img{
+  img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-.menu{
+  }
+.awards{
     width: 100%;
     margin: 20em 0;
 }
 
-.menu-item{
+.awards-item{
     width: 100%;
     padding: 0 2em;
     display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-p {
+.awards p {
     position: absolute;
     top: 0%;
     width: 100%;
@@ -37,42 +36,42 @@ p {
     transition: color 0.25s;
 }
 
-.info, .name, .tag{
+.awards-info, .awards-name, .awards-tag{
     position: relative;
     overflow: hidden;
 }
 
-.info, .tag{
+.awards-info, .awards-tag{
     flex: 1;
     height: 14px;
     font-size: 14px; 
 }
 
-.tag{
+.awards-tag{
     text-align: right;
 }
 
-.name{
+.awards-name{
     flex: 4;
     height: 60px;
     font-size: 60px;
     text-align: center;
 }
 
-.info p:nth-child(2),
-.name p:nth-child(2),
-.tag p:nth-child(2){
+.awards-info p:nth-child(2),
+.awards-name p:nth-child(2),
+.awards-tag p:nth-child(2){
     top: 100%;
     color: #000;
 }
 
-.menu:hover .info p:nth-child(1),
-.menu:hover .name p:nth-child(1),
-.menu:hover .tag p:nth-child(1){
+.awards:hover .awards-info p:nth-child(1),
+.awards:hover .awards-name p:nth-child(1),
+.awards:hover .awards-tag p:nth-child(1){
     color: rgb(165, 165, 165);
 }
 
-.preview{
+.awards-preview{
     position: absolute;
     top: 0;
     left: 0;
@@ -82,18 +81,18 @@ p {
     pointer-events: none;
 }
 
-.preview-img{
+.awards-preview-img{
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.preview-img-2{
+.awards-preview-img-2{
     top: 20px;
     left: 20px;
 }
 
-.preview-img img{
+.awards-preview-img img{
     position: absolute;
     top: 0;
     left: 0;

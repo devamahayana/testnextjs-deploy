@@ -13,16 +13,18 @@ import Awards from "@/components/Awards";
 export default function Home() {
   return (
     <>
-      {/* <HomeBanner /> */}
+      <HomeBanner />
       <Awards />
-      {/* <Banners /> */}
-      {/* <Banner /> */}
-      {/* <Portfolio /> */}
+      <Portfolio />
+      
+      {/* <Banner /> */}      
       {/* <Menu /> */}
       {/* <Contact /> */}
       {/* <HeroSection /> */}
       {/* <Magnetic /> */}
       {/* <Product /> */}
+
+      {/* <Banners /> */}
     </>
   );
 }
