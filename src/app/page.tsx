@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       {/* <HomeBanner /> */}
-      <Award />
-      {/* <Banners /> */}
+      {/* <Award /> */}
+      <Banners />
       {/* <Banner /> */}
       {/* <Portfolio /> */}
       {/* <Menu /> */}
