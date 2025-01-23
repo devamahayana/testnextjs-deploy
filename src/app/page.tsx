@@ -7,12 +7,14 @@ import Contact from "@/components/Contact";
 import Image from "next/image";
 import Magnetic from "@/components/Magnetic";
 import HomeBanner from "@/components/HomeBanner";
+import Award from "@/components/Award";
 import Product from "@/components/Product";
 
 export default function Home() {
   return (
     <>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
+      <Award />
       {/* <Banners /> */}
       {/* <Banner /> */}
       {/* <Portfolio /> */}

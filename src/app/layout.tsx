@@ -1,7 +1,7 @@
 import Menu from "@/components/Menu";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 // import "./script";
 
 const geistSans = Geist({
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className="overflow-x-hidden"
       >
-        <Menu />
+        {/* <Menu /> */}
         {children}
       </body>
     </html>
