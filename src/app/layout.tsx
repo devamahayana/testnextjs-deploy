@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className="overflow-x-hidden"
       >
-        <Menu />
+        {/* <Menu /> */}
         {children}
       </body>
     </html>

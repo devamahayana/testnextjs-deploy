@@ -17,7 +17,7 @@ export default function Home() {
       <Awards />
       <Portfolio />
       
-      {/* <Contact /> */}
+      <Contact />
       {/* <Banner /> */}      
       {/* <Menu /> */}
       

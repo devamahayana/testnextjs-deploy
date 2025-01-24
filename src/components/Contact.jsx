@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
 import Image from "next/image";
-import "../app/contact.css"
+// import "../app/contact.css"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,20 +56,20 @@ export default function Contact() {
       });
     });
 
-    gsap.to(".logo", {
+    gsap.to(".contact-logo", {
       scale: 1,
       duration: 0.5,
       ease: "power1.out",
       scrollTrigger: scrollTriggerSettings,
     });
-    gsap.to(".line p", {
+    gsap.to(".contact-line p", {
       y: 0,
       stagger: 0.1,
       duration: 0.5,
       ease: "power1.out",
       scrollTrigger: scrollTriggerSettings,
     });
-    gsap.to("button", {
+    gsap.to(".contact-wrapper button", {
       y: 0,
       opacity: 1,
       delay: 0.25,
@@ -101,31 +101,32 @@ export default function Contact() {
   };
   return (
     <>
-      <ReactLenis root>
-        <section className="hero">
-          <div className="img">
+      <ReactLenis root >
+        <div className="contact-wrapper">
+        <section className="contact-hero">
+          <div className="contact-hero-img">
             <Image src="/pro-logo.png" alt="" width={1000} height={1000}/>
           </div>
         </section>
         <section className="contact-main">
           <div className="contact-main-content">
-            <div className="logo">
+            <div className="contact-logo">
               <Image src="/logo.png" alt="" width={1000} height={1000}/>
             </div>
 
-            <div className="copy">
-              <div className="line">
+            <div className="contact-copy">
+              <div className="contact-line">
                 <p>Lorem ipsum dolor si amet</p>
               </div>
-              <div className="line">
+              <div className="contact-line">
                 <p>Lorem ipsum dolor si amet</p>
               </div>
-              <div className="line">
+              <div className="contact-line">
                 <p>Lorem ipsum dolor si amet</p>
               </div>
             </div>
 
-            <div className="btn">
+            <div className="">
               <button>GET PRO</button>
             </div>
           </div>
@@ -133,9 +134,10 @@ export default function Contact() {
           {generateRows()}
         </section>
 
-        <section className="footer">
+        <section className="contact-footer">
           <Link href="#">Link in description</Link>
         </section>
+        </div>
       </ReactLenis>
     </>
   );
