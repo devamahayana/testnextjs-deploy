@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Contact() {
   useEffect(() => {
     const scrollTriggerSettings = {
-      trigger: ".main",
+      trigger: ".contact-main",
       start: "top 25%",
       toggleActions: "play reverse play reverse",
     };
@@ -23,14 +23,14 @@ export default function Contact() {
     const rightRotationValues = [30, 20, 35];
     const yValues = [100, -150, -400];
 
-    gsap.utils.toArray(".row").forEach((row, index) => {
-      const cardLeft = row.querySelector(".card-left");
-      const cardRight = row.querySelector(".card-right");
+    gsap.utils.toArray(".contact-row").forEach((row, index) => {
+      const cardLeft = row.querySelector(".contact-card-left");
+      const cardRight = row.querySelector(".contact-card-right");
       
       gsap.to(cardLeft, {
         x: leftXValues[index],
         scrollTrigger: {
-          trigger: ".main",
+          trigger: ".contact-main",
           start: "top center",
           end: "150% bottom",
           scrub: true,
@@ -44,7 +44,7 @@ export default function Contact() {
       gsap.to(cardRight, {
         x: rightXValues[index],
         scrollTrigger: {
-          trigger: ".main",
+          trigger: ".contact-main",
           start: "top center",
           end: "150% bottom",
           scrub: true,
@@ -87,11 +87,11 @@ export default function Contact() {
     const rows = [];
     for (let i = 1; i <=3; i++){
       rows.push(
-        <div className="row" key={i}>
-          <div className="card card-left">
+        <div className="contact-row" key={i}>
+          <div className="contact-card contact-card-left">
             <Image src={`/img-${2 * i - 1}.jpg`} alt="" width={1000} height={1000}/>
           </div>
-          <div className="card card-right">
+          <div className="contact-card contact-card-right">
             <Image src={`/img-${2 * i}.jpg`} alt="" width={1000} height={1000}/>
           </div>
         </div>
@@ -107,8 +107,8 @@ export default function Contact() {
             <Image src="/pro-logo.png" alt="" width={1000} height={1000}/>
           </div>
         </section>
-        <section className="main">
-          <div className="main-content">
+        <section className="contact-main">
+          <div className="contact-main-content">
             <div className="logo">
               <Image src="/logo.png" alt="" width={1000} height={1000}/>
             </div>

@@ -17,9 +17,10 @@ export default function Home() {
       <Awards />
       <Portfolio />
       
+      {/* <Contact /> */}
       {/* <Banner /> */}      
       {/* <Menu /> */}
-      {/* <Contact /> */}
+      
       {/* <HeroSection /> */}
       {/* <Magnetic /> */}
       {/* <Product /> */}
