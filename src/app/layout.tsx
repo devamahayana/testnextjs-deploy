@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className="overflow-x-hidden"
+        className="overflow-hidden"
       >
         <Menu />
         {children}

@@ -143,7 +143,7 @@ const HomeBanner = () => {
         <div className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full origin-center will-change-transform">
             {/* <div className="imgBanner"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner"><img src="./assets/img2.webp" alt="" /></div> */}
-            <div className="imgBanner main"><img src="./assets/img3.webp" alt="" /></div>
+            <div className="imgBanner main"><img src="./assets/asd.png" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img1.webp" alt="" /></div>
             <div className="imgBanner main"><img src="./assets/img2.webp" alt="" /></div>
         </div>
@@ -152,7 +152,7 @@ const HomeBanner = () => {
         <div className="relative w-full h-full">        
 
             <div className="cover-img">
-                <img src="./assets/img3.webp" alt="" />
+                <img src="./assets/asd.png" alt="" />
             </div>
 
             <div className="site-info absolute bottom-8 left-8 w-1/2 h-1/2 flex flex-col justify-between">
