@@ -103,11 +103,11 @@ export default function Contact() {
     <>
       <ReactLenis root >
         <div className="contact-wrapper">
-        <section className="contact-hero">
+        {/* <section className="contact-hero">
           <div className="contact-hero-img">
             <Image src="/pro-logo.png" alt="" width={1000} height={1000}/>
           </div>
-        </section>
+        </section> */}
         <section className="contact-main">
           <div className="contact-main-content">
             <div className="contact-logo">

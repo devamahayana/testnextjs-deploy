@@ -9,15 +9,18 @@ import Magnetic from "@/components/Magnetic";
 import HomeBanner from "@/components/HomeBanner";
 import Product from "@/components/Product";
 import Awards from "@/components/Awards";
+import Skill from "@/components/Skill";
 
 export default function Home() {
   return (
     <>
       <HomeBanner />
       <Awards />
-      <Portfolio />
-      
+      <Portfolio />  
+      <Skill />    
       <Contact />
+
+
       {/* <Banner /> */}      
       {/* <Menu /> */}
       
