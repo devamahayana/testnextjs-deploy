@@ -10,6 +10,7 @@ import HomeBanner from "@/components/HomeBanner";
 import Product from "@/components/Product";
 import Awards from "@/components/Awards";
 import Skill from "@/components/Skill";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Portfolio />  
       <Skill />    
       <Contact />
+
+      {/* <About /> */}
 
 
       {/* <Banner /> */}      
