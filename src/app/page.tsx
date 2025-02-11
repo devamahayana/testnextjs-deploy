@@ -16,16 +16,16 @@ import Doing from "@/components/Doing";
 export default function Home() {
   return (
     <>
-      <HomeBanner />
+      {/* <HomeBanner />
       <Awards />
       <Portfolio />  
       <Skill />    
-      <Contact />
+      <Contact /> */}
 
       {/* <About /> */}
 
 
-      {/* <Doing /> */}
+      <Doing />
       {/* <Banner /> */}      
       {/* <Menu /> */}
       
