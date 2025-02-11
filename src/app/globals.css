@@ -457,3 +457,17 @@ img{
     height: 240px;
   }
 }
+
+#card-1 .card-inner{
+  background-color: #c3abff
+}
+#card-2 .card-inner{
+  background: #ffffff
+}
+#card-3 .card-inner{
+  background: #fed35b
+}
+#card-4 .card-inner{
+  background: #1e1e1e;
+  color: #fff
+}

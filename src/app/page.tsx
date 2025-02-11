@@ -11,19 +11,21 @@ import Product from "@/components/Product";
 import Awards from "@/components/Awards";
 import Skill from "@/components/Skill";
 import About from "@/components/About";
+import Doing from "@/components/Doing";
 
 export default function Home() {
   return (
     <>
-      <HomeBanner />
+      {/* <HomeBanner />
       <Awards />
       <Portfolio />  
       <Skill />    
-      <Contact />
+      <Contact /> */}
 
       {/* <About /> */}
 
 
+      <Doing />
       {/* <Banner /> */}      
       {/* <Menu /> */}
       
