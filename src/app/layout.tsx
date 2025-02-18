@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={myFont.className}>
       
-      <body
-        className="overflow-hidden"
-      >
+      <body className="overflow-hidden">
         <Menu />
         {children}
       </body>
