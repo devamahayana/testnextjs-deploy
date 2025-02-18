@@ -4,6 +4,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 
 const myFont = localFont({ src: './fonts/TT Hoves Pro Trial Medium.ttf' })
+const myFont2 = localFont({ src: './fonts/TT Hoves Pro Trial Regular.ttf' })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en" className={myFont2.className}>
       
       <body className="overflow-hidden">
         <Menu />
