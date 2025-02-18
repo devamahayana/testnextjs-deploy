@@ -216,9 +216,9 @@ const Portfolio = () => {
             <div className="portfolio-img" id="portfolio-img-5"><img src="./assets/img5.webp" alt="" /></div>
         </section>
 
-        <section className="about">
+        {/* <section className="about">
             <p>Your next section goes here</p>
-        </section>
+        </section> */}
     </div>
   );
 };
