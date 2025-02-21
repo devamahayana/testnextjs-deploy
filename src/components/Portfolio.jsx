@@ -4,7 +4,8 @@ import { useEffect } from 'react';
 import { data } from '../app/data.js'; // Pastikan data.js ada dalam struktur folder yang sesuai
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Lenis from '@studio-freight/lenis';
+// import Lenis from '@studio-freight/lenis';
+import { Lenis } from 'lenis/react';
 // import "../app/portfolio.css";
 
 const Portfolio = () => {
