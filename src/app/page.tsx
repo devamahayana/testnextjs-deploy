@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
       <HomeBanner />
+      <About />
       <Awards />
       <Portfolio />  
       <Skill />    
