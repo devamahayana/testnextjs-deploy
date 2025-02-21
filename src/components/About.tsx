@@ -2,14 +2,14 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className='h-screen w-full'>
+    <section className='h-screen w-full px-8'>
       <h1 className='text-[16rem] font-semibold tracking-wide'>Intro</h1>
-      <div className='flex items-end'>
-        <p className='text-2xl font-semibold w-1/4'>
-          Creative developer with a design background, crafting immersive digital experiences that combine creativity and functionality.
+      <div className='flex items-end justify-between gap-20'>
+        <p className='text-xl font-semibold w-1/4'>
+          Having started as a graphic designer and transitioning into a creative developer gives me a unique perspective and understanding  in merging both visual aesthetics and modern technology.
         </p>
         <h3 className='text-8xl font-semibold w-3/4'>
-          Creative developer with a design background, crafting immersive digital experiences that combine creativity and functionality.
+          <span className='ml-24'>Creative</span> developer with a design background, crafting immersive digital experiences that combine creativity and functionality.
         </h3>
         
       </div>
