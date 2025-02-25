@@ -161,20 +161,19 @@ const HomeBanner = () => {
                         <div className="line"><p>Featured Works</p></div>
                     </div>
                     <div className="col flex-1">
-                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic omnis corrupti officia saepe sunt.</h2>
+                        <h2>Ciao, developer and designer and your partner. Currently available for freelance projects</h2>
                     </div>
                 </div>
                 <div className="row flex gap-8">
                     <div className="col flex-1"></div>
                     <div className="col flex-1">
                         <div className="address">
-                            <div className="line"><p>Arc Studio</p></div>
-                            <div className="line"><p>Riverstone Building</p></div>
-                            <div className="line"><p>- 28 Orchard Lane</p></div>
-                            <div className="line"><p>N1 4DX</p></div>
+                            <div className="line"><p>Deva Mahayana</p></div>                            
+                            <div className="line"><p>Bali - Indonesia</p></div>
+                            <div className="line"><p>8°39′1″S 115°14′54″E</p></div>
                         </div>
                         <div className="socials">
-                            <div className="line"><p>SayHi@Balimmo.com</p></div>
+                            <div className="line"><p>Hi@devamahayana.com</p></div>
                             <div className="line"><p>Instagram</p></div>
                             <div className="line"><p>LinkedIn</p></div>
                         </div>

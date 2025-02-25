@@ -168,7 +168,7 @@ const Menu = () => {
   return (
     <div className="">
         <nav className='nav-menu'>
-            <div className="logo"><img src="./assets/logo.png" width="50px" alt="" /></div>
+            <div className="logo"><img src="./assets/logo.svg" width="50px" alt="" /></div>
             <p className="menu-open">Menu</p>
         </nav>
 

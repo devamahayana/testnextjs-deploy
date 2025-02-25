@@ -53,7 +53,7 @@ const About = () => {
 
             <div className='flex flex-col gap-4'>
               <h4 className='text-4xl font-semibold'>
-                Social Media
+                Video and Motion
               </h4>
               <p className='text-base font-semibold'>
                 Your website deserves to be seen. I optimize your online presence to elevate your visibility in search results, helping your business attract the right audience and stand out in the digital landscape.
