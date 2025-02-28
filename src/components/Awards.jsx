@@ -1,7 +1,6 @@
 'use client';
 import { useEffect } from "react";
 import gsap from "gsap";
-// import "../app/award.css";
 
 const Award = () => {
     useEffect(() => {

@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className={myFont2.className}>
       
       <body className="overflow-hidden">
-        <Menu />
+        {/* <Menu /> */}
         {children}
       </body>
     </html>

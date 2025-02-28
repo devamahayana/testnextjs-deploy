@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
 import Image from "next/image";
-// import "../app/contact.css"
 
 gsap.registerPlugin(ScrollTrigger);
 
