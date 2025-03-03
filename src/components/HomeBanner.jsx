@@ -135,7 +135,7 @@ const HomeBanner = () => {
       
   return (
     <div className="relative w-screen h-screen overflow-hidden">
-        <div className="revealers absolute top-0 left-0 w-screen h-screen flex flex-col z-[2]">
+        <div className="revealers absolute top-0 left-0 w-screen h-screen flex flex-col">
             <div className="revealer r-1"></div>
             <div className="revealer r-2"></div>
         </div>
